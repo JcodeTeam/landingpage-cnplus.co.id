@@ -1,0 +1,22 @@
+[14-Oct-2025 07:35:11 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:37:17 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:37:39 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:38:17 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:38:17 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:38:18 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:38:18 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:38:36 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:39:50 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 07:39:52 UTC] Register error: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens
+[14-Oct-2025 08:40:43 UTC] PHP Warning:  session_start(): open(/home/cnplusco/public_html/v3/api../tmp/sess_kcugdj0oelo1pmf3v887jlu6m7, O_RDWR) failed: No such file or directory (2) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 08:40:43 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /home/cnplusco/public_html/v3/api../tmp) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 08:41:49 UTC] PHP Warning:  session_start(): open(/home/cnplusco/public_html/v3/api../tmp/sess_0cjfksu6a6b9pio741i1ue4f29, O_RDWR) failed: No such file or directory (2) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 08:41:49 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /home/cnplusco/public_html/v3/api../tmp) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 08:59:35 UTC] PHP Warning:  session_start(): open(/home/cnplusco/public_html/v3/api../../tmp/sess_5pn1gfebbqr9s595bl42k9luk1, O_RDWR) failed: No such file or directory (2) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 08:59:35 UTC] PHP Warning:  session_start(): Failed to read session data: files (path: /home/cnplusco/public_html/v3/api../../tmp) in /home/cnplusco/public_html/v3/api/login.php on line 3
+[14-Oct-2025 09:37:50 UTC] PHP Warning:  Undefined variable $sessionPath in /home/cnplusco/public_html/v3/api/login.php on line 4
+[14-Oct-2025 09:37:50 UTC] PHP Warning:  Undefined variable $sessionPath in /home/cnplusco/public_html/v3/api/login.php on line 5
+[14-Oct-2025 09:37:50 UTC] PHP Warning:  mkdir(): Invalid path in /home/cnplusco/public_html/v3/api/login.php on line 5
+[14-Oct-2025 09:37:50 UTC] PHP Warning:  Undefined variable $sessionPath in /home/cnplusco/public_html/v3/api/login.php on line 8
+[15-Oct-2025 08:01:18 UTC] PHP Warning:  Undefined variable $user in /home/cnplusco/public_html/v3/api/login.php on line 26
+[15-Oct-2025 08:01:18 UTC] PHP Warning:  Trying to access array offset on null in /home/cnplusco/public_html/v3/api/login.php on line 26

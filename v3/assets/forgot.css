@@ -1,0 +1,91 @@
+/* forgot.css */
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #ecf5f2; /* background light mint */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#form__container {
+  background-color: #1e3732; /* dark green */
+  padding: 2.5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f0f8f0;
+  margin-bottom: 1.5rem;
+}
+
+.form__field {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #cde3d8;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  background-color: #f0f8f0; /* light input */
+}
+
+input[type="text"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #4dff91;
+}
+
+.btn-form {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #4caf70; /* green button */
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-form:hover {
+  background-color: #3e9c5b;
+}
+
+.add {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #aebfb4;
+}
+
+.add a {
+  color: #69c1b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#error-message {
+  color: #ff6b6b;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  display: none;
+}
