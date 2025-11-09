@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>CNPLUS | Enterprise Digital Ecosystem & Solutions</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-main: #020817;
+        --clr-soft: #9ca3af;
+        --clr-soft2: #6b7280;
+        --clr-text: #e5e7eb;
+        --clr-title: #f9fafb;
+        --clr-brand: #38bdf8;
+        --clr-brand-alt: #4f46e5;
+        --clr-border-soft: rgba(75, 85, 99, 0.9);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+          sans-serif;
+        color: var(--clr-text);
+        background-color: var(--bg-main);
+      }
+
+      .page {
+        color: var(--clr-text);
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 40;
+        backdrop-filter: blur(18px);
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(56, 189, 248, 0.06),
+            transparent
+          ),
+          rgba(2, 6, 23, 0.96);
+        border-bottom: 1px solid rgba(148, 163, 253, 0.12);
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.9rem 0;
+        gap: 1.5rem;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .brand-logo {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        background: radial-gradient(circle, var(--clr-brand), var(--clr-brand-alt));
+      }
+
+      .brand-title {
+        font-weight: 600;
+        font-size: 1rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #a5b4fc;
+      }
+
+      .brand-sub {
+        font-size: 0.7rem;
+        color: var(--clr-soft2);
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        font-size: 0.85rem;
+        color: var(--clr-soft);
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .nav-links a:hover {
+        color: var(--clr-text);
+      }
+
+      .nav-cta {
+        padding: 0.5rem 1.1rem;
+        border-radius: 999px;
+        border: 1px solid rgba(129, 140, 248, 0.9);
+        color: var(--clr-text);
+        font-size: 0.78rem;
+        font-weight: 500;
+        text-decoration: none;
+        backdrop-filter: blur(16px);
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+      }
+
+      /* Hero */
+      .hero {
+        padding: 4.2rem 0 3.2rem;
+        display: grid;
+        grid-template-columns: minmax(0, 3fr) minmax(260px, 2.4fr);
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .page-label {
+        font-size: 0.65rem;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--clr-soft2);
+        margin-bottom: 0.35rem;
+      }
+
+      .hero-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.25rem 0.9rem;
+        border-radius: 999px;
+        border: 1px solid rgba(148, 163, 253, 0.35);
+        font-size: 0.7rem;
+        color: var(--clr-soft);
+        margin-bottom: 0.9rem;
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(56, 189, 248, 0.16),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.9);
+      }
+
+      .hero-title {
+        font-size: 2.3rem;
+        line-height: 1.15;
+        font-weight: 600;
+        color: var(--clr-title);
+        margin: 0 0 1rem;
+      }
+
+      .hero-title span {
+        color: #a5b4fc;
+      }
+
+      .hero-text {
+        font-size: 0.95rem;
+        color: var(--clr-soft);
+        max-width: 520px;
+        margin-bottom: 1.5rem;
+      }
+
+      .hero-bullets {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.75rem 1.5rem;
+        font-size: 0.8rem;
+        color: var(--clr-soft);
+        margin-bottom: 1.7rem;
+      }
+
+      .hero-bullets span.dot {
+        color: var(--clr-brand);
+      }
+
+      .hero-ctas {
+        display: flex;
+        gap: 0.9rem;
+        align-items: center;
+      }
+
+      .btn-primary {
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+        border: none;
+        font-size: 0.82rem;
+        font-weight: 500;
+        background: linear-gradient(
+          to right,
+          var(--clr-brand-alt),
+          var(--clr-brand)
+        );
+        color: var(--clr-title);
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .btn-secondary {
+        padding: 0.7rem 1.3rem;
+        border-radius: 999px;
+        border: 1px solid rgba(156, 163, 175, 0.7);
+        font-size: 0.78rem;
+        color: var(--clr-text);
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .hero-right {
+        border-radius: 1.4rem;
+        padding: 1.15rem;
+        border: 1px solid var(--clr-border-soft);
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(79, 70, 229, 0.22),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.98);
+        display: grid;
+        gap: 0.75rem;
+        font-size: 0.75rem;
+      }
+
+      .hero-right-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--clr-soft);
+        font-size: 0.7rem;
+      }
+
+      .hero-metric-label {
+        font-size: 0.65rem;
+        color: var(--clr-soft2);
+      }
+
+      .hero-metric-value {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #a5b4fc;
+      }
+
+      .hero-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.22rem 0.7rem;
+        border-radius: 999px;
+        border: 1px solid rgba(75, 85, 99, 0.9);
+        font-size: 0.65rem;
+        color: var(--clr-soft);
+        width: fit-content;
+      }
+
+      .hero-pill span {
+        color: var(--clr-brand);
+      }
+
+      /* Value bar */
+      .value-bar {
+        padding: 1.2rem 0;
+        border-top: 1px solid var(--clr-border-soft);
+        border-bottom: 1px solid var(--clr-border-soft);
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 1.5rem;
+        font-size: 0.7rem;
+        color: var(--clr-soft);
+      }
+
+      .value-label {
+        font-size: 0.65rem;
+        color: var(--clr-soft2);
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+      }
+
+      .value-strong {
+        font-size: 0.8rem;
+        color: var(--clr-text);
+      }
+
+      section {
+        padding: 3.3rem 0 0;
+      }
+
+      .section-header {
+        max-width: 620px;
+        margin-bottom: 1.9rem;
+      }
+
+      .section-kicker {
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--clr-soft2);
+        margin-bottom: 0.4rem;
+      }
+
+      .section-title {
+        font-size: 1.45rem;
+        font-weight: 600;
+        color: var(--clr-title);
+        margin: 0 0 0.4rem;
+      }
+
+      .section-subtitle {
+        font-size: 0.85rem;
+        color: var(--clr-soft);
+        margin: 0;
+      }
+
+      .about-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 2.4fr) minmax(260px, 2fr);
+        gap: 2rem;
+        font-size: 0.85rem;
+        color: var(--clr-soft);
+      }
+
+      .about-highlight {
+        padding: 0.9rem 1rem;
+        border-radius: 0.9rem;
+        border: 1px solid rgba(79, 70, 229, 0.28);
+        background:
+          radial-gradient(
+            circle at top right,
+            rgba(56, 189, 248, 0.14),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.96);
+        font-size: 0.78rem;
+        color: var(--clr-text);
+      }
+
+      .solutions-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.25rem;
+        font-size: 0.78rem;
+      }
+
+      .solution-card {
+        padding: 1rem;
+        border-radius: 1rem;
+        border: 1px solid var(--clr-border-soft);
+        background:
+          radial-gradient(
+            circle at top left,
+            rgba(79, 70, 229, 0.16),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.98);
+      }
+
+      .solution-tag {
+        font-size: 0.62rem;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--clr-soft2);
+        margin-bottom: 0.2rem;
+      }
+
+      .solution-title {
+        font-size: 0.9rem;
+        font-weight: 500;
+        color: var(--clr-title);
+        margin-bottom: 0.4rem;
+      }
+
+      .solution-list {
+        list-style: none;
+        padding-left: 0;
+        margin: 0.3rem 0 0;
+        color: var(--clr-soft);
+      }
+
+      .solution-list li {
+        margin-bottom: 0.25rem;
+      }
+
+      .solution-outcome {
+        margin-top: 0.4rem;
+        font-size: 0.72rem;
+        color: #a5b4fc;
+      }
+
+      .reasons-grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.2rem;
+        font-size: 0.78rem;
+      }
+
+      .reason-item {
+        padding: 0.9rem;
+        border-radius: 0.9rem;
+        border: 1px solid rgba(55, 65, 81, 0.95);
+        background-color: rgba(9, 9, 11, 0.98);
+      }
+
+      .reason-title {
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: var(--clr-title);
+        margin: 0 0 0.25rem;
+      }
+
+      .reason-text {
+        font-size: 0.75rem;
+        color: var(--clr-soft);
+        margin: 0;
+      }
+
+      .cta-section {
+        padding: 3rem 0 4rem;
+      }
+
+      .cta-box {
+        padding: 1.75rem 1.5rem;
+        border-radius: 1.4rem;
+        border: 1px solid rgba(79, 70, 229, 0.5);
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(79, 70, 229, 0.26),
+            transparent
+          ),
+          rgba(9, 9, 11, 0.98);
+        display: grid;
+        grid-template-columns: minmax(0, 2.5fr) minmax(220px, 1.8fr);
+        gap: 1.5rem;
+        align-items: center;
+      }
+
+      .cta-label {
+        font-size: 0.65rem;
+        color: var(--clr-soft2);
+        text-transform: uppercase;
+        letter-spacing: 0.16em;
+        margin-bottom: 0.3rem;
+      }
+
+      .cta-title {
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--clr-title);
+        margin: 0 0 0.4rem;
+      }
+
+      .cta-text {
+        font-size: 0.85rem;
+        color: var(--clr-soft);
+        margin: 0;
+      }
+
+      .cta-contact {
+        font-size: 0.78rem;
+        color: var(--clr-text);
+      }
+
+      .cta-contact p {
+        margin: 0.08rem 0;
+      }
+
+      footer {
+        padding: 1.5rem 0 2rem;
+        font-size: 0.65rem;
+        color: var(--clr-soft2);
+        text-align: center;
+      }
+
+      @media (max-width: 900px) {
+        .hero {
+          grid-template-columns: 1fr;
+        }
+
+        .value-bar {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .about-layout {
+          grid-template-columns: 1fr;
+        }
+
+        .solutions-grid,
+        .reasons-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .cta-box {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .nav-links {
+          display: none;
+        }
+
+        .hero-title {
+          font-size: 1.9rem;
+        }
+
+        .solutions-grid,
+        .reasons-grid,
+        .value-bar {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- HEADER CNPLUS GLOBAL -->
+      <header>
+        <div class="container">
+          <div class="navbar">
+            <div class="brand">
+              <div class="brand-logo"></div>
+              <div>
+                <div class="brand-title">CNPLUS</div>
+                <div class="brand-sub">Connected Digital Ecosystem Platform</div>
+              </div>
+            </div>
+            <nav class="nav-links">
+              <a href="/">Home</a>
+              <a href="/platform">Platform</a>
+              <a href="/solutions">Solutions</a>
+              <a href="/customers">Customers</a>
+              <a href="#contact" class="nav-cta">Talk to Our Team</a>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <!-- HERO: CNPLUS x ENTERPRISE SOLUTIONS -->
+        <section class="hero">
+          <div class="container">
+            <div>
+              <div class="page-label">Solutions / Enterprise Digital Ecosystem</div>
+              <div class="hero-label">
+                <span>CNPLUS Enterprise Solutions</span>
+                <span>In Collaboration with PT Ardyanda</span>
+              </div>
+              <h1 class="hero-title">
+                Ekosistem digital terintegrasi untuk
+                <span>operasional mission-critical lintas industri.</span>
+              </h1>
+              <p class="hero-text">
+                CNPLUS menghadirkan arsitektur, platform, dan implementasi bersama PT Ardyanda
+                untuk organisasi yang membutuhkan kendali penuh atas aplikasi, integrasi,
+                pembayaran, dan AI dalam satu ekosistem yang dapat diaudit dan diskalakan.
+              </p>
+              <div class="hero-bullets">
+                <div><span class="dot">•</span> Dirancang untuk high-volume & high-risk operations</div>
+                <div><span class="dot">•</span> Microservices, API-first, cloud/on-premise ready</div>
+                <div><span class="dot">•</span> Terhubung dengan sistem internal & partner secara terkendali</div>
+                <div><span class="dot">•</span> Managed services untuk menjaga kualitas layanan harian</div>
+              </div>
+              <div class="hero-ctas">
+                <a href="#contact" class="btn-primary">Jadwalkan Konsultasi</a>
+                <a href="#solutions" class="btn-secondary">Lihat Spektrum Solusi</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-right-header">
+              <span>CNPLUS Enterprise Stack</span>
+              <span>Powered with PT Ardyanda</span>
+            </div>
+            <div>
+              <div class="hero-metric-label">Orientasi</div>
+              <div class="hero-metric-value">
+                From fragmented tools to one governed ecosystem.
+              </div>
+            </div>
+            <div class="hero-pill">
+              <span>●</span> Digital Channels & SuperApps
+            </div>
+            <div class="hero-pill">
+              <span>●</span> Middleware & API Management
+            </div>
+            <div class="hero-pill">
+              <span>●</span> Payment, QRIS & Merchant / Partner Platform
+            </div>
+            <div class="hero-pill">
+              <span>●</span> AI, Analytics, Fraud & Automation
+            </div>
+            <div class="hero-pill">
+              <span>●</span> Managed Services & Field Operations
+            </div>
+          </div>
+        </section>
+
+        <!-- VALUE BAR -->
+        <section>
+          <div class="container">
+            <div class="value-bar">
+              <div>
+                <div class="value-label">Fokus</div>
+                <div class="value-strong">
+                  Enterprise, regulated & high-impact operations
+                </div>
+              </div>
+              <div>
+                <div class="value-label">Arsitektur</div>
+                <div class="value-strong">
+                  API-first, microservices, containerized, observable
+                </div>
+              </div>
+              <div>
+                <div class="value-label">Model</div>
+                <div class="value-strong">
+                  Tailored solution + proven delivery partner
+                </div>
+              </div>
+              <div>
+                <div class="value-label">Support</div>
+                <div class="value-strong">
+                  Long-term managed services & SLAs
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ABOUT AS CNPLUS PAGE -->
+        <section id="about">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-kicker">Context</div>
+              <h2 class="section-title">
+                Satu halaman dalam ekosistem CNPLUS, untuk organisasi yang tidak bisa kompromi.
+              </h2>
+              <p class="section-subtitle">
+                Page ini memposisikan CNPLUS sebagai orchestrator platform digital,
+                dengan PT Ardyanda sebagai strategic implementation & technology partner
+                untuk solusi yang menyentuh core operasional Anda.
+              </p>
+            </div>
+
+            <div class="about-layout">
+              <div>
+                <p>
+                  CNPLUS tidak hanya menyediakan modul tunggal, tetapi kerangka ekosistem:
+                  bagaimana channel, integration layer, data, payment, dan AI saling terhubung
+                  dengan kendali, keamanan, dan governance yang jelas.
+                </p>
+                <p>
+                  Melalui kolaborasi dengan PT Ardyanda, kami menawarkan kombinasi:
+                  desain arsitektur, pengembangan, integrasi, hingga operasi harian
+                  di lingkungan yang kompleks dan heavily regulated.
+                </p>
+              </div>
+              <div class="about-highlight">
+                <strong>Posisi Halaman Ini di cnplus.co.id</strong>
+                <ul style="padding-left: 1.1rem; margin: 0.4rem 0 0;">
+                  <li>Submenu di: <em>Solutions &gt; Enterprise Digital Ecosystem</em>.</li>
+                  <li>Menjelaskan kapabilitas lintas industri berbasis CNPLUS Stack.</li>
+                  <li>Mengarahkan lead serius ke sesi konsultasi & desain solusi.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SOLUTIONS -->
+        <section id="solutions">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-kicker">Solutions</div>
+              <h2 class="section-title">
+                CNPLUS Enterprise Stack untuk berbagai skenario bisnis.
+              </h2>
+              <p class="section-subtitle">
+                Dapat diadopsi oleh bank, multifinance, asuransi, logistik, retail,
+                distribusi, B2B platform, hingga institusi publik yang membutuhkan
+                ekosistem digital yang terkendali.
+              </p>
+            </div>
+
+            <div class="solutions-grid">
+              <div class="solution-card">
+                <div class="solution-tag">Channels & Experience</div>
+                <h3 class="solution-title">Customer, Partner & Internal Portals</h3>
+                <ul class="solution-list">
+                  <li>Web & mobile apps untuk pelanggan, agen, merchant, dealer, staf.</li>
+                  <li>Konfigurasi produk, limit, konten, kampanye dari pusat.</li>
+                  <li>Compatible dengan CNPLUS identity & access control.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: pengalaman omnichannel yang konsisten & scalable.
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="solution-tag">Integration Fabric</div>
+                <h3 class="solution-title">Middleware & API Management</h3>
+                <ul class="solution-list">
+                  <li>API gateway & katalog API terkelola dalam governance CNPLUS.</li>
+                  <li>Integrasi ke core system, ERP, payment, data services.</li>
+                  <li>Observability: logging, tracing, monitoring siap audit.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: integrasi tertib, cepat, dan tidak liar.
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="solution-tag">Payments & Ecosystem</div>
+                <h3 class="solution-title">Payment, QRIS & Merchant Platform</h3>
+                <ul class="solution-list">
+                  <li>Infrastruktur pembayaran & QRIS untuk bank/fintech/corporate.</li>
+                  <li>Portal merchant/partner dengan settlement & reporting.</li>
+                  <li>Dukungan perangkat & thermal printing untuk operasi lapangan.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: kontrol atas transaksi & data, plus revenue baru.
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="solution-tag">AI & Intelligence</div>
+                <h3 class="solution-title">AI, Analytics & Automation</h3>
+                <ul class="solution-list">
+                  <li>Fraud & anomaly detection lintas sistem & channel.</li>
+                  <li>Scoring, rekomendasi, document & media understanding.</li>
+                  <li>Chatbot operasional & dashboard eksekutif real-time.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: keputusan berbasis data, proses lebih efisien.
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="solution-tag">Operations</div>
+                <h3 class="solution-title">Managed Services & Field Operations</h3>
+                <ul class="solution-list">
+                  <li>Monitoring, maintenance, incident handling, tuning performa.</li>
+                  <li>Koordinasi deployment & lifecycle perangkat.</li>
+                  <li>Service-level yang dinegosiasikan sesuai kebutuhan bisnis.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: continuity terjaga tanpa overload tim internal.
+                </div>
+              </div>
+
+              <div class="solution-card">
+                <div class="solution-tag">Advisory</div>
+                <h3 class="solution-title">Architecture & Governance Advisory</h3>
+                <ul class="solution-list">
+                  <li>Assessment landscape aplikasi & integrasi Anda.</li>
+                  <li>Desain blueprint ekosistem digital & security model.</li>
+                  <li>Guidance implementasi berbasis best-practice CNPLUS.</li>
+                </ul>
+                <div class="solution-outcome">
+                  Output: roadmap realistis, bukan sekadar slogan transformasi.
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- STRATEGIC REASONS -->
+        <section id="strategic-reasons">
+          <div class="container">
+            <div class="section-header">
+              <div class="section-kicker">Why CNPLUS</div>
+              <h2 class="section-title">
+                Strategic Reasons to Partner with CNPLUS & PT Ardyanda
+              </h2>
+              <p class="section-subtitle">
+                Satu kombinasi platform & eksekusi untuk organisasi yang mengutamakan
+                reliability, governance, dan kecepatan inovasi.
+              </p>
+            </div>
+
+            <div class="reasons-grid">
+              <div class="reason-item">
+                <h3 class="reason-title">Mission-Critical Mindset</h3>
+                <p class="reason-text">
+                  Terbiasa di lingkungan transaksi tinggi & regulated, dengan standar
+                  uptime, keamanan, dan auditability yang ketat.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">End-to-End Ecosystem</h3>
+                <p class="reason-text">
+                  CNPLUS sebagai platform, PT Ardyanda sebagai implementor: satu garis
+                  tanggung jawab yang jelas.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">Future-Ready Architecture</h3>
+                <p class="reason-text">
+                  API-first, microservices, container-based, observability, siap
+                  ekspansi produk & bisnis tanpa refactor brutal.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">Tailored to Each Organization</h3>
+                <p class="reason-text">
+                  Solusi dibangun mengikuti struktur bisnis, risiko, dan regulasi, bukan
+                  dipaksa ke produk template.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">Integrated Security & Governance</h3>
+                <p class="reason-text">
+                  Identity, akses, logging, audit trail, enkripsi, dan policy
+                  sudah menjadi bagian desain awal.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">Operational Continuity</h3>
+                <p class="reason-text">
+                  Managed services yang jelas, bukan sekadar serah-terima dokumen
+                  dan hilang.
+                </p>
+              </div>
+              <div class="reason-item">
+                <h3 class="reason-title">Proven Across Critical Sectors</h3>
+                <p class="reason-text">
+                  Pendekatan yang tumbuh dari sektor keuangan, diadaptasi untuk
+                  logistik, retail, B2B, dan institusi publik dengan standar sama.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contact" class="cta-section">
+          <div class="container">
+            <div class="cta-box">
+              <div>
+                <div class="cta-label">Next Step</div>
+                <h3 class="cta-title">
+                  Integrasikan ekosistem Anda ke dalam CNPLUS Enterprise Stack.
+                </h3>
+                <p class="cta-text">
+                  Tim CNPLUS dan PT Ardyanda siap membantu memetakan landscape
+                  sistem Anda, mengidentifikasi celah dan peluang, lalu merancang
+                  tahap implementasi yang konkret dan measurable.
+                </p>
+              </div>
+              <div class="cta-contact">
+                <div class="cta-label">Hubungi Tim CNPLUS</div>
+                <p>Email: <strong>hello@cnplus.co.id</strong></p>
+                <p>WhatsApp / Business Contact: <strong>+62-XXX-XXXX-XXXX</strong></p>
+                <p>Partnership & Delivery: <strong>PT Ardyanda (by arrangement)</strong></p>
+                <div style="margin-top: 0.7rem;">
+                  <a href="mailto:hello@cnplus.co.id" class="btn-primary">
+                    Request Consultation Deck
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        &copy; CNPLUS. Part of the CNPLUS Connected Digital Ecosystem.
+      </footer>
+    </div>
+  </body>
+</html>

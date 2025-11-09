@@ -44,13 +44,15 @@
       src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
       type="module"
     ></script>
-    <script type="module" crossorigin src="./assets/main-Cy-KhtkP.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="./assets/about-DNAln2WD.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/utils-0K0NRc03.js" />
     <link rel="modulepreload" crossorigin href="./assets/cta-Cn3DzOF0.js" />
     <link rel="stylesheet" crossorigin href="./assets/utils-G2Uxg8FP.css" />
     <link rel="stylesheet" crossorigin href="./assets/cta-DNvwYii8.css" />
     <link rel="stylesheet" crossorigin href="./assets/main-Cki7cTe-.css" />
     <link rel="stylesheet" crossorigin href="./assets/form-BTXpGTEZ.css" />
+    <link rel="stylesheet" crossorigin href="./assets/about-D8xy-Hia.css" />
   </head>
   <body class="poppins-font">
     <!-- Loading Screen -->
@@ -92,21 +94,46 @@
         </div>
       </nav>
     </header>
-    <div class="gradient-bg"></div>
     <!-- Hero Section -->
-    <section id="hero">
-      <div class="sticky">
-        <div class="au__container container">
-          <h1 class="au__section hero">ABOUT US</h1>
-          <h2 class="au__title hero">Custom Software for Real Operations</h2>
-          <p>
-            Kami membuat aplikasi atau software khusus yang disesuaikan dengan
-            kebutuhan bisnis Anda. Bukan hanya software jadi, tapi juga solusi
-            yang memang pas untuk membantu pekerjaan sehari-hari — lebih mudah,
-            efisien, dan bisa terus berkembang bersama bisnis Anda ke depannya.
-          </p>
-          <div class="cta-buttons">
-          </div>
+    <section
+      class="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
+      <!-- Background image -->
+      <div class="absolute inset-0 -z-10">
+        <img
+          src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg"
+          alt=""
+          class="w-full h-full object-cover"
+        />
+        <div class="absolute inset-0 bg-slate-950/80"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="max-w-3xl mx-4 text-center space-y-6 mb-20">
+        <!-- Heading -->
+        <h1
+          class="text-4xl md:text-6xl font-semibold text-gray-100 tracking-tight leading-tight"
+        >
+          Digital Banking Suite for Ambitious Banks
+        </h1>
+
+        <!-- Subcopy -->
+        <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto">
+          Percepat transformasi digital dengan satu ekosistem terintegrasi untuk
+          branchless onboarding, QRIS acquiring, SuperApps, manajemen API,
+          hingga AI untuk risiko & operasional. Satu mitra, satu arsitektur,
+          siap untuk volume transaksi serius.
+        </p>
+
+        <div class="cta-buttons justify-center">
+          <a class="btn btn-start light scroll-link" href="#mission-statement"
+            >Get to Know Us
+          </a>
+          <a
+            class="btn btn-start dark scroll-link"
+            href="index.html#product-section"
+            >See Our Products
+          </a>
         </div>
       </div>
     </section>

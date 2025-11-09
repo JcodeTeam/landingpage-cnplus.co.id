@@ -421,7 +421,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width:   580px) {
     .best__btn-switch {
         bottom: clamp(2rem, 15vw, 5rem)
     }
