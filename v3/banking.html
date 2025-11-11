@@ -34,12 +34,14 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/bold/style.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script> -->
     <!-- <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
     <script src="https://unpkg.com/feather-icons"></script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
       type="module"
@@ -95,11 +97,9 @@
         </div>
       </nav>
     </header>
-    <!-- Hero Section -->
     <section
       class="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      <!-- Background image -->
       <div class="absolute inset-0 -z-10">
         <img
           src="https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg"
@@ -108,17 +108,12 @@
         />
         <div class="absolute inset-0 bg-slate-950/80"></div>
       </div>
-
-      <!-- Content -->
       <div class="max-w-3xl mx-4 text-center space-y-6 mb-20">
-        <!-- Heading -->
         <h1
           class="text-4xl md:text-6xl font-semibold text-gray-100 tracking-tight leading-tight"
         >
           Digital Banking Suite for Ambitious Banks
         </h1>
-
-        <!-- Subcopy -->
         <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto">
           Percepat transformasi digital dengan satu ekosistem terintegrasi untuk
           branchless onboarding, QRIS acquiring, SuperApps, manajemen API,
@@ -127,67 +122,354 @@
         </p>
 
         <div class="cta-buttons justify-center">
-          <a class="btn btn-start light scroll-link" href="#mission-statement"
-            >Get to Know Us
-          </a>
           <a
             class="btn btn-start dark scroll-link"
-            href="index.html#product-section"
-            >See Our Products
+            href="#reason-section"
+            >Explore Our Solutions
           </a>
         </div>
       </div>
     </section>
     <section id="reason-section">
       <div class="reason__container container">
-        <h2>Strategic Reasons to Partner with Us</h2>
-        <div class="reason__cards">
-          <div class="reason__card">
-            <img src="./service/pic-1.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>End-to-end digital ecosystem</h3>
-            <p>
-              We provide a complete digital ecosystem—from strategy and development to operations—ensuring your business transformation runs smoothly and sustainably.
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-semibold text-slate-900">
+              Why Choose Our Banking Software Solutions?
+            </h2>
+            <p class="mt-4 text-sm md:text-base text-slate-600 leading-relaxed">
+              Kami memahami tantangan unik industri perbankan dan finansial. Solusi
+              kami dirancang khusus untuk memenuhi kebutuhan kritikal Anda dengan
+              keandalan, keamanan, dan skalabilitas tingkat enterprise.
             </p>
           </div>
-          <div class="reason__card">
-            <img src="./service/pic-2.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>Execution in mission-critical environments</h3>
-            <p>
-              Our team has proven expertise in delivering reliable, high-performance solutions for mission-critical operations, even under the most demanding conditions.
-            </p>
-          </div>
-          <div class="reason__card">
-            <img src="./service/pic-3.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>Enterprise-grade, scalable & future-ready</h3>
-            <p>
-              Each solution is built with enterprise-level security, scalability, and flexibility—ready to meet your business needs today and in the future.
-            </p>
-          </div>
-          <div class="reason__card">
-            <img src="./service/pic-4.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>Operational continuity & managed services</h3>
-            <p>
-              We ensure your systems stay up and running 24/7 through proactive monitoring, maintenance, and professional support services.
-            </p>
-          </div>
-          <div class="reason__card">
-            <img src="./service/pic-5.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>Proven Track Record Across Critical Industries</h3>
-            <p>
-              Our banking and finance expertise forms the foundation of our approach, extended successfully to multifinance, insurance, logistics, retail, and other high-reliability industries.
-            </p>
-          </div>
-          <div class="reason__card">
-            <img src="./service/pic-6.png" alt="Icon" width="100" height="90" loading="lazy" />
-            <h3>Tailored, Not Generic Solutions</h3>
-            <p>
-              Our approach is always based on each organization’s business needs, internal processes, risk structure, and compliance standards. The result: a platform that is relevant, effective, and immediately operational.
-            </p>
+          <div class="reason__cards">
+            <div class="reason__card" data-aos="fade-up">
+              <img
+                src="./service/pic-1.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>End-to-end digital ecosystem</h3>
+              <p>
+                We provide a complete digital ecosystem—from strategy and
+                development to operations—ensuring your business transformation
+                runs smoothly and sustainably.
+              </p>
+            </div>
+            <div class="reason__card" data-aos="fade-up" data-aos-delay="100">
+              <img
+                src="./service/pic-2.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>Execution in mission-critical environments</h3>
+              <p>
+                Our team has proven expertise in delivering reliable,
+                high-performance solutions for mission-critical operations, even
+                under the most demanding conditions.
+              </p>
+            </div>
+            <div class="reason__card" data-aos="fade-up" data-aos-delay="200">
+              <img
+                src="./service/pic-3.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>Enterprise-grade, scalable & future-ready</h3>
+              <p>
+                Each solution is built with enterprise-level security,
+                scalability, and flexibility—ready to meet your business needs
+                today and in the future.
+              </p>
+            </div>
+            <div class="reason__card" data-aos="fade-up" data-aos-delay="300">
+              <img
+                src="./service/pic-4.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>Operational continuity & managed services</h3>
+              <p>
+                We ensure your systems stay up and running 24/7 through
+                proactive monitoring, maintenance, and professional support
+                services.
+              </p>
+            </div>
+            <div class="reason__card" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="./service/pic-5.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>Proven Track Record Across Critical Industries</h3>
+              <p>
+                Our banking and finance expertise forms the foundation of our
+                approach, extended successfully to multifinance, insurance,
+                logistics, retail, and other high-reliability industries.
+              </p>
+            </div>
+            <div class="reason__card" data-aos="fade-up" data-aos-delay="500">
+              <img
+                src="./service/pic-6.png"
+                alt="Icon"
+                width="100"
+                height="90"
+                loading="lazy"
+              />
+              <h3>Tailored, Not Generic Solutions</h3>
+              <p>
+                Our approach is always based on each organization’s business
+                needs, internal processes, risk structure, and compliance
+                standards. The result: a platform that is relevant, effective,
+                and immediately operational.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    
+
+    <section id="services" class="py-8 md:py-5">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
+      <h2 class="text-4xl md:text-5xl font-semibold text-slate-900">
+        Our Software & Digital Banking Solutions
+      </h2>
+      <p class="mt-4 text-sm md:text-base text-slate-600 leading-relaxed">
+        Kami membangun platform dan solusi yang grounded ke operasi nyata: modular, secure,
+        compliant, dan siap dipakai tim harian di industri finansial dan institusi kritikal.
+      </p>
+    </div>
+
+    <div class="space-y-12 md:space-y-16">
+      <!-- 1: Digital Banking Platform (Image Left / Text Right) -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="https://savvycomsoftware.com/wp-content/uploads/2025/03/Earth-1.png.webp"
+            alt="Digital Banking Platform"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            Digital Banking Platform
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Internet & Mobile Banking hingga SuperApp yang mendukung pembukaan rekening digital,
+            transaksi harian, dan layanan pembayaran terintegrasi. Dirancang modular agar tim bank
+            dapat mengonfigurasi fitur tanpa mengganggu core system.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Pembukaan rekening & onboarding digital dengan alur yang compliant.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Transaksi lengkap: transfer, pembayaran, top up, notifikasi real-time.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Integrasi BI-Fast, QRIS, VA & payment services dalam satu platform.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2: IDSync (Text Left / Image Right) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="./service/pic-2.png"
+            alt="IDSync Biometrik & eKYC"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            IDSync: Biometrik & eKYC
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Platform identitas digital untuk verifikasi nasabah dan pengguna berbasis e-KTP,
+            biometrik, dan integrasi IKD. Dibangun untuk mempercepat onboarding tanpa mengorbankan
+            keamanan.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Pembacaan e-KTP, integrasi IKD, dan validasi data terpusat.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Face recognition & liveness detection untuk mencegah impersonation.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Mendukung eKYC & otorisasi transaksi dengan audit trail yang jelas.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3: Fraud Detection System (Image Left / Text Right) -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="./service/pic-3.png"
+            alt="Fraud Detection System"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            Fraud Detection System (FDS)
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Sistem pemantauan transaksi real-time & near real-time untuk kanal perbankan dan
+            pembayaran, menggabungkan rule-based dan machine learning untuk menekan fraud.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Monitoring multi-kanal: EDC, e-channel, mobile banking, gateway, payroll.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Risk scoring & alert otomatis untuk aktivitas mencurigakan.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Dukungan investigasi & pelaporan untuk kebutuhan audit & regulator.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4: AI & Automation Solutions (Text Left / Image Right) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="./service/pic-4.png"
+            alt="AI & Automation Solutions"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            AI & Automation Solutions
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Solusi AI untuk otomasi proses, analitik cerdas, dan pengambilan keputusan yang
+            lebih presisi, terintegrasi langsung dengan sistem yang sudah berjalan.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Chatbot layanan, workflow automation, dan smart routing proses.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Analisis dokumen & ekstraksi data untuk percepat proses operasional.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Credit scoring & anomaly detection berbasis data & perilaku.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5: QRIS & Merchant Ecosystem (Image Left / Text Right) -->
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="./service/pic-5.png"
+            alt="QRIS & Merchant Ecosystem"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            QRIS & Merchant Ecosystem
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            QRIS Engine dan platform pengelolaan merchant untuk memperluas jaringan pembayaran
+            nontunai dengan kontrol penuh atas terminal, routing, dan settlement.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Onboarding merchant terstruktur dengan verifikasi & profil yang jelas.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Manajemen terminal & kanal pembayaran dalam satu control panel.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-left">
+              <i class="bi bi-check"></i>
+              <p>Routing transaksi, rekonsiliasi & settlement yang transparan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6: Infrastruktur, Integrasi & Managed Services (Text Left / Image Right) -->
+      <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+        <div class="w-full md:w-5/12">
+          <img
+            src="./service/pic-6.png"
+            alt="Infrastruktur, Integrasi & Managed Services"
+            loading="lazy"
+            class="w-full h-56 md:h-64 object-contain rounded-2xl"
+          />
+        </div>
+        <div class="w-full md:w-7/12">
+          <h3 class="text-xl md:text-2xl font-semibold text-slate-900 mb-3">
+            Infrastruktur, Integrasi & Managed Services
+          </h3>
+          <p class="text-sm md:text-base text-slate-600 leading-relaxed">
+            Dukungan end-to-end dari arsitektur, integrasi, hingga operasi harian untuk
+            memastikan platform selalu tersedia, aman, dan siap beradaptasi dengan kebutuhan bisnis.
+          </p>
+          <div class="mt-6 space-y-2">
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Arsitektur microservices, API management & middleware yang terukur.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Integrasi mulus dengan core banking & sistem eksisting.</p>
+            </div>
+            <div class="usp__highlight" data-aos="fade-right">
+              <i class="bi bi-check"></i>
+              <p>Layanan implementasi, support teknis & managed operations 24/7.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <div class="cta-menu show">
       <a class="cta-item" href="#cta-section">
         <i class="bi bi-calendar unfill"></i>
@@ -478,4 +760,12 @@
       </div>
     </footer>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 </html>

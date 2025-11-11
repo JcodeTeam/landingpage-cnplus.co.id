@@ -1,11 +1,8 @@
-.reason__cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  justify-items: center;
-  
+.reason__container {
+  text-align: center;
+  padding: 0 1rem;
+  margin-top: -2rem;
 }
-
 .service__container {
   padding: 0 1rem;
   margin-top: -2rem;
