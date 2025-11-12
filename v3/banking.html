@@ -59,41 +59,35 @@
     <link rel="stylesheet" crossorigin href="./assets/about-D8xy-Hia.css" />
     <link rel="stylesheet" crossorigin href="./assets/banking.css" />
     <style>
-.container.quote {
-    /* Hapus background-image linear-gradient lama (jika ada) */
-    
-    /* Tambahkan gambar latar belakang */
-    background-image: url('URL_GAMBAR_KEAMANAN_ANDA.jpg'); 
-    background-size: cover;
-    background-position: center;
-    
-    /* Overlay gelap untuk memastikan teks terbaca jelas */
-    /* Ini akan membuat efek fade yang lebih baik */
-    position: relative; 
-    overflow: hidden;
-    
-    /* Pastikan border-radius tetap ada jika ingin sudut melengkung */
-    border-radius: 0.5rem; 
-  }
-  
-  /* Tambahkan pseudo-elemen untuk overlay gelap (efek fade gelap) */
-  .container.quote::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Hitam transparan 50% */
-    z-index: 1;
-  }
+      .container.quote {
+          
+          /* background-image: url('URL_GAMBAR_KEAMANAN_ANDA.jpg'); 
+          background-size: cover;
+          background-position: center;
+          
 
-  /* Pastikan teks berada di atas overlay */
-  .container.quote p {
-    position: relative;
-    z-index: 2;
-  }
+          position: relative; 
+          overflow: hidden;
+           */
+          border-radius: 0.5rem; 
+        }
+        
+        /* .container.quote::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background-color: rgba(0, 0, 0, 0.5); 
+          z-index: 1;
+        }
 
+        .container.quote p {
+          position: relative;
+          z-index: 2;
+        }
+ */
 
     </style>
   </head>
@@ -372,7 +366,15 @@
           </div>
 
           <!-- <div class="gradient-bg"></div> -->
-          <div class="container w-full text-center text-xl md:text-2xl font-semibold text-slate-900 bg-[#d3fdfd] border-2 border-solid border-[#c7f0f0] rounded-md p-4" data-aos="fade-up">
+          <div class="container w-full quote text-center text-xl md:text-2xl font-semibold text-slate-900 items-center gap-8" data-aos="fade-up">
+              <div class="w-full md:w-5/12 my-100 rounded-2xl shadow-top bg-cover bg-center gap-8" style="background-image: linear-gradient(to top, rgb(137, 200, 170), rgb(238, 246, 243));">
+              <img
+                src="./asset/pa-tj-Photoroom.png"
+                alt="image"
+                loading="lazy"
+                class="w-full h-80 md:h-96 object-contain rounded-2xl"
+              />
+            </div>
             <p>Amankan Transaksi Anda, Optimalkan Keputusan Bisnis Anda, Akselerasikan Pertumbuhan Anda.</p>
           </div>
 
