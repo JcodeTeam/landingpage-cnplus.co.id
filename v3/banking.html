@@ -47,6 +47,7 @@
       type="module"
     ></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" crossorigin src="./assets/main-Cy-KhtkP.js"></script>
     <script type="module" crossorigin src="./assets/about-DNAln2WD.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/utils-0K0NRc03.js" />
     <link rel="modulepreload" crossorigin href="./assets/cta-Cn3DzOF0.js" />
@@ -65,12 +66,17 @@
     </div> -->
     <header>
       <!-- Navbar -->
-      <nav class="navbar">
+      <nav class="navbar float">
         <div class="nav-content">
           <div class="logo-company">
-            <a href="index.html#hero-section"
-              ><img src="./asset/logo.png" alt="Company Logo"
-            /></a>
+            <a href="#hero-section">
+              <img
+                src="./asset/logo.png"
+                alt="Company Logo"
+                height="40"
+                loading="lazy"
+              />
+            </a>
           </div>
           <label class="hamburger">
             <input type="checkbox" data-toggle=".nav-links" />
@@ -78,26 +84,22 @@
           <!-- <i class="ph-bold ph-list"></i> -->
           <ul class="nav-links underline-ani">
             <li class="nav-link">
-              <a href="index.html#service-section" class="scroll-link"
-                >Service</a
-              >
+              <a href="#service-section" class="scroll-link">Service</a>
             </li>
             <li class="nav-link">
               <a href="./banking.html" class="scroll-link">Banking</a>
             </li>
             <li class="nav-link">
-              <a href="index.html#product-section" class="scroll-link"
-                >Product</a
-              >
+              <a href="#product-section" class="scroll-link">Product</a>
             </li>
             <li class="nav-link">
-              <a href="./about-us.html#hero" class="scroll-link">About Us</a>
+              <a href="./about-us.html" class="scroll-link">About Us</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <section
+    <section id="hero-section"
       class="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
       <div class="absolute inset-0 -z-10">
@@ -112,13 +114,10 @@
         <h1
           class="text-4xl md:text-6xl font-semibold text-gray-100 tracking-tight leading-tight"
         >
-          Digital Banking Suite for Ambitious Banks
+          Digital Banking Suite for Growing Banks
         </h1>
         <p class="text-sm md:text-base text-slate-300 max-w-xl mx-auto">
-          Percepat transformasi digital dengan satu ekosistem terintegrasi untuk
-          branchless onboarding, QRIS acquiring, SuperApps, manajemen API,
-          hingga AI untuk risiko & operasional. Satu mitra, satu arsitektur,
-          siap untuk volume transaksi serius.
+          Percepat lonjakan pertumbuhan dan transformasi digital dengan satu ekosistem terintegrasi. Siap mendukung ambisi ekspansi bisnis Anda.
         </p>
 
         <div class="cta-buttons justify-center">
@@ -134,7 +133,7 @@
       <div class="reason__container container">
         <div class="max-w-7xl mx-auto px-4">
           <div class="max-w-3xl mx-auto text-center mb-12 md:mb-16" data-aos="fade-up">
-            <h2 class="text-4xl md:text-5xl font-semibold text-slate-900">
+            <h2 class="usp__section-title text-4xl md:text-5xl font-semibold text-slate-900">
               Why Choose Our Banking Software Solutions?
             </h2>
             <p class="mt-4 text-sm md:text-base text-slate-600 leading-relaxed">
