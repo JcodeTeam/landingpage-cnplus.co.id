@@ -191,7 +191,6 @@
   display: table-cell;
   flex-shrink: 0;
   font-size: var(--_width);
-  font-family: var(--ff-serif-display);
   text-align: center;
   line-height: 0.8;
   width: var(--_width);
